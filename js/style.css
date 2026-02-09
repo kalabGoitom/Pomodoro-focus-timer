@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #001822;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+}
+
+.container .label-container h2 {
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 2.5px;
+  margin-top: -25px;
+}
+
+.container .header {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.container .header div {
+  border-radius: 6px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  padding: 0.1rem 0.251rem;
+}
+
+.container .options-container {
+  margin-bottom: 4rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.container .options-container label {
+  font-size: 1.2rem;
+}
+
+.container .options-container select {
+  padding: 0.25rem;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #aaaaaa8f;
+  cursor: pointer;
+}
+
+.container .options-container select::picker(select) {
+  background-color: #001822;
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+}
+
+.container .options-container select option {
+  background: #001822;
+  cursor: pointer;
+  color: #fff;
+}
+
+.app-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: rgba(0, 53, 109, 0.43);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.app-container .heads {
+  position: absolute;
+  top: -30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container .heads div {
+  background: rgba(0, 53, 109, 0.43);
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.5);
+}
+
+.app-container .heads .horzontal-head {
+  width: 60px;
+  height: 20px;
+  border-radius: 25px;
+}
+
+.app-container .heads .vertical-head {
+  height: 10px;
+  width: 20px;
+}
+
+.app-container .screen-container h1 {
+  font-size: 2.5rem;
+}
+
+.app-container .btn-container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+button {
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1.5rem;
+  transition: all 0.3s linear;
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+.app-container .btn-container .start {
+  color: green;
+}
+.app-container .btn-container .start:disabled {
+  color: rgba(0, 124, 0, 0.501);
+  cursor: no-drop;
+}
+
+.app-container .btn-container .pause {
+  color: orange;
+}
+
+.app-container .btn-container .reset {
+  color: orangered;
+}
+
+.app-container .alert-container p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: rgb(255, 106, 52);
+  display: none;
+}
+
+.font-size-1 {
+  font-size: 2.75rem;
+}
+
+.font-size-2 {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 400px) {
+  .app-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .app-container .screen-container h1 {
+    font-size: 2.1rem;
+  }
+
+  .app-container .heads .horzontal-head {
+    width: 50px;
+    height: 20px;
+  }
+
+  .app-container .heads .vertical-head {
+    height: 10px;
+    width: 20px;
+  }
+
+  button {
+    font-size: 1.25rem;
+  }
+
+  .app-container .alert-container p {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+  }
+
+  .font-size-1 {
+    font-size: 2.4rem;
+  }
+
+  .font-size-2 {
+    font-size: 2.1rem !important;
+  }
+
+  .container .options-container label {
+    font-size: 1rem;
+  }
+
+  .container .options-container select {
+    padding: 0.15rem;
+    font-size: 0.9rem;
+  }
+
+  .container .options-container {
+    margin-bottom: 3.5rem;
+    display: flex;
+    gap: 15px;
+  }
+
+  .container .header {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .container .header h2 {
+    font-size: 1.25rem;
+  }
+}
