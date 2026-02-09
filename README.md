@@ -59,7 +59,12 @@ All timing logic is handled using a single interval and derived state to ensure 
 
 ## Preview
 
-_(Add screenshots here if you want later)_
+### Desktop Mode
+![Desktop Mode Screenshot](screenshots/desktop.png)
+
+### Mobile Mode
+![Mobile Mode Screenshot](screenshots/mobile.png)
+
 
 ---
 
