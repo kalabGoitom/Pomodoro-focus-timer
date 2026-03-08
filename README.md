@@ -46,14 +46,6 @@ All timing logic is handled using a single interval and derived state to ensure 
 - Designing UI updates from application state  
 - Structuring logic in a scalable way (React-ready)
 
----
-
-## 🔮 Future Improvements
-
-- Pause / resume functionality  
-- Sound notifications  
-- Local storage support  
-- React version of the app  
 
 ---
 
